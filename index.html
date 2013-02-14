@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Average Grade</title>
+<link href="" rel="stylesheet">
+<style>
+</style>
+<script>
+
+var studentGrades=[["Johan", 90],["Amy", 88],["Forrest", 92], 
+                   ["Zack", 77],["Croft", 77],["Bill", 93],
+                   ["Joseph", 96],["Frank", 83],["Thomas", 81],
+                   ["Christof", 91]
+];
+var sum=0
+function calcAverage(scores){
+  for(var i=[0]; i < scores.length; i++){
+    sum+=(scores[i][1]);
+  }
+ var average=(sum / 10);
+}
+
+function convertGrade(averageScore){
+  var letterGrade 
+  if (averageScore < 60){
+    letter="F";
+    console.log(letterGrade);
+  }
+  else if (averageScore < 70){
+    letterGrade="D";
+  }
+
+  else if (averageScore< 80){
+    letterGrade ="C";
+  }
+  else if (averageScore< 90){
+    letterGrade ="B";
+  }
+
+  else if (averageScore<100){
+    letterGrade ="A";
+  }
+}
+</script>
+
+</body>
+</html>
